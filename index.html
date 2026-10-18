@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','GTM-XXXXXXX');</script>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "4399955153574301");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=4399955153574301&ev=PageView&noscript=1"
+    /></noscript>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>DT Locações | Aluguel de Mesas e Cadeiras em Goiânia</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+      :root {
+        --bg-dark: #121212;
+        --bg-card: #ffffff;
+        --primary-gold: #fdd835;
+        --primary-dark-gold: #c6a700;
+        --text-light: #f4f4f4;
+        --text-dark: #333333;
+        --accent-green: #25d366;
+        --header-height: 70px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+      }
+      html, body {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        width: 100%;
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+        line-height: 1.5;
+      }
+      h1, h2, h3 {
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+
+      /* HEADER */
+      header {
+        background: rgba(0, 0, 0, 0.95);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: var(--header-height);
+        z-index: 1000;
+        border-bottom: 2px solid var(--primary-gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      .logo img {
+        height: 60px;
+        width: auto;
+      }
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+      .nav-links a {
+        color: var(--text-light);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+
+      /* HERO */
+      .hero {
+        position: relative;
+        min-height: 500px;
+        height: 75vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0;
+        overflow: hidden;
+      }
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        object-fit: cover;
+        z-index: -2;
+        will-change: transform, opacity;
+      }
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(18, 18, 18, 1)
+        );
+        z-index: -1;
+      }
+      .hero-content {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid rgba(253, 216, 53, 0.3);
+        backdrop-filter: blur(5px);
+        margin: 0 15px;
+        width: 100%;
+        max-width: 600px;
+        z-index: 1;
+        margin-top: 60px;
+      }
+      .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: white;
+        line-height: 1.2;
+      }
+      .hero span {
+        color: var(--primary-gold);
+      }
+      .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+        align-items: center;
+      }
+      .btn-cta {
+        background: var(--primary-gold);
+        color: black;
+        padding: 14px 35px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+        box-shadow: 0 0 15px rgba(253, 216, 53, 0.4);
+        width: 100%;
+        max-width: 300px;
+      }
+      .btn-whatsapp-hero {
+        background: transparent;
+        border: 2px solid var(--accent-green);
+        color: var(--accent-green);
+        padding: 12px 35px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        transition: 0.3s;
+      }
+      .btn-whatsapp-hero:hover {
+        background: var(--accent-green);
+        color: white;
+      }
+
+      /* WHATSAPP FLUTUANTE */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+        background: #25d366;
+        color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        z-index: 950;
+        text-decoration: none;
+        transition: transform 0.3s;
+        animation: pulse-float 2s infinite;
+      }
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
+      @keyframes pulse-float {
+        0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+        70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      }
+
+      /* CATALOGO */
+      .catalog-section {
+        padding: 30px 0 80px 0;
+        background: #121212;
+        position: relative;
+        z-index: 2;
+      }
+      .section-title {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .section-title h2 {
+        color: var(--primary-gold);
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+      }
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      .product-card {
+        background: var(--bg-card);
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        color: var(--text-dark);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        height: 100%;
+      }
+      .product-img-box {
+        height: 150px;
+        width: 100%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .product-img-box img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+      }
+      .product-info {
+        padding: 15px 10px;
+        text-align: center;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .product-title {
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #222;
+        line-height: 1.3;
+        min-height: 40px;
+      }
+      .product-price {
+        font-size: 1.1rem;
+        color: #222;
+        font-weight: 800;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .btn-order-wpp {
+        background: var(--accent-green);
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 0.85rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        text-decoration: none;
+      }
+
+      footer {
+        background: #000;
+        color: #888;
+        padding: 40px 15px;
+        border-top: 1px solid #222;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      footer a { color: #888; text-decoration: none; transition: 0.3s; }
+      footer a:hover { color: var(--primary-gold); }
+      .btn-review {
+        display: inline-block;
+        background: #333;
+        color: var(--primary-gold);
+        padding: 8px 15px;
+        border-radius: 5px;
+        margin-top: 15px;
+        border: 1px solid var(--primary-gold);
+      }
+
+      @media (min-width: 769px) {
+        .products-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        .hero { height: 80vh; }
+        .product-img-box { height: 180px; }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header data-aos="fade-down" data-aos-duration="1000">
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">
+            <img src="Logo.webp" alt="DT Locações" />
+          </a>
+          <div class="nav-links">
+            <a href="#catalogo">Catálogo</a>
+            <a href="#contato">Contato</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <img
+        src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+        class="hero-bg"
+        id="hero-img"
+        alt="Festa"
+      />
+      
+      <div class="hero-content" data-aos="zoom-in">
+        <h1 style="line-height: 1.3" data-aos="fade-down" data-aos-delay="200">
+          ALUGUEL DE MESAS E CADEIRAS <br />
+          <span style="color: var(--primary-gold); font-size: 0.9em">PAGUE SÓ NA ENTREGA</span>
+        </h1>
+
+        <p style="color: #eee; font-size: 0.95rem; margin-top: 15px" data-aos="fade-up" data-aos-delay="400">
+          Consulte nossa variedade de materiais para sua festa. <br />
+          <strong>Entrega rápida, sem burocracia e sem taxas antecipadas!</strong>
+        </p>
+
+        <div class="btn-group" data-aos="fade-up" data-aos-delay="600">
+          <a href="#catalogo" class="btn-cta">VER CATALOGO</a>
+          <a href="https://wa.me/5562991185058" target="_blank" class="btn-whatsapp-hero">
+            <i class="fab fa-whatsapp"></i> FALAR COM ATENDENTE
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="catalog-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Nosso Catálogo</h2>
+          <div style="width: 40px; height: 3px; background: var(--primary-gold); margin: 8px auto;"></div>
+        </div>
+        <div class="products-grid" id="products-container"></div>
+      </div>
+    </section>
+
+    <a href="https://wa.me/5562991185058" class="whatsapp-float" target="_blank" title="Falar no WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer id="contato">
+      <div class="container" data-aos="fade-up">
+        <p style="color: white; font-weight: bold; font-size: 1rem; margin-bottom: 10px;">
+          DT Locações
+        </p>
+        <p>Av. Vereda dos Buritis, Goiânia - GO</p>
+        <p style="margin: 15px 0">
+          <a href="tel:5562991185058" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <i class="fab fa-whatsapp" style="color: var(--accent-green); font-size: 1.2rem"></i>
+            (62) 99118-5058
+          </a>
+        </p>
+        <p style="margin-bottom: 20px">
+          <a href="https://instagram.com/dt.locacoes" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <i class="fab fa-instagram" style="color: #e1306c; font-size: 1.2rem"></i>
+            @dt.locacoes
+          </a>
+        </p>
+        <a href="https://g.page/r/CU5vBx3Z3cwHEAI/review" target="_blank" class="btn-review">
+          <i class="fas fa-star"></i> Avalie-nos no Google
+        </a>
+        <br /><br />
+        <iframe
+          src="https://maps.google.com/maps?q=-16.745494,-49.349673&z=15&output=embed"
+          width="100%"
+          height="250"
+          style="border: 0; max-width: 400px; border-radius: 10px;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </footer>
+
+    <script>
+      const products = [
+        { id: 1, name: "Jogo Mesa Quadrada + 4 Cadeiras", price: "R$ 15,00", image: "Mesa quadrada + 4 cadeiras.jpg" },
+        { id: 4, name: "Mesa Quadrada Avulsa", price: "R$ 10,00", image: "Mesa quadrada avulsa.jpg" },
+        { id: 6, name: "Cadeira Avulsa (182kg)", price: "R$ 3,00", image: "Cadeira avulsa.webp" },
+        { id: 7, name: "Forro Quadrado Avulso", price: "R$ 10,00 <span style='display:block; font-size:0.75rem; font-weight:400; color:#666; margin-top:2px;'>Com jogo de mesa: R$ 5,00</span>", image: "Forro de mesa quadrada.webp" }
+      ];
+
+
+      const phoneNumber = "5562991185058";
+      const urlParams = new URLSearchParams(window.location.search);
+      const trafficSource = urlParams.get('utm_source');
+      
+      let defaultWppMsg = "Olá! Estava navegando no site e gostaria de saber mais.";
+      if (trafficSource === 'google') {
+          defaultWppMsg = "Olá! Vim pelo anúncio do Google e gostaria de fazer um orçamento.";
+      } else if (trafficSource === 'facebook' || trafficSource === 'ig' || trafficSource === 'meta') {
+          defaultWppMsg = "Olá! Vi o anúncio no Facebook/Instagram e gostaria de saber mais.";
+      }
+      const encodedDefaultWppMsg = encodeURIComponent(defaultWppMsg);
+
+      function renderProducts() {
+        const container = document.getElementById("products-container");
+        container.innerHTML = "";
+        
+        products.forEach((product, index) => {
+          let delay = (index % 2) * 150; 
+          let itemWppMsg = encodeURIComponent(`Olá! Gostaria de solicitar informações sobre o item: ${product.name}`);
+
+          container.innerHTML += `
+            <div class="product-card" data-aos="fade-up" data-aos-delay="${delay}">
+              <div class="product-img-box">
+                <img src="${product.image}" loading="lazy" alt="${product.name}" onerror="this.src='https://via.placeholder.com/300?text=Foto'">
+              </div>
+              <div class="product-info">
+                <div>
+                  <h3 class="product-title">${product.name}</h3>
+                  <span class="product-price">${product.price}</span>
+                </div>
+                <a href="https://wa.me/${phoneNumber}?text=${itemWppMsg}" target="_blank" class="btn-order-wpp">
+                  <i class="fab fa-whatsapp"></i> ALUGAR NO WHATSAPP
+                </a>
+              </div>
+            </div>`;
+        });
+      }
+
+      window.addEventListener("load", function () {
+        renderProducts();
+        
+        const staticWppLinks = document.querySelectorAll('.btn-whatsapp-hero, .whatsapp-float');
+        staticWppLinks.forEach(link => {
+            link.href = `https://wa.me/${phoneNumber}?text=${encodedDefaultWppMsg}`;
+        });
+      });
+      
+      window.addEventListener("scroll", function () {
+        const scroll = window.pageYOffset;
+        const heroImg = document.getElementById("hero-img");
+        const heroHeight = document.querySelector(".hero").offsetHeight;
+        if (scroll <= heroHeight) {
+          heroImg.style.transform = "translateY(" + scroll * 0.4 + "px)";
+          heroImg.style.opacity = 1 - scroll / heroHeight;
+        }
+      });
+    </script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, 
+        once: true,    
+        offset: 100    
+      });
+    </script>
+  </body>
+</html>
