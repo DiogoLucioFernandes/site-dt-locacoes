@@ -18,7 +18,7 @@ HTML, CSS e JavaScript · Google Tag Manager (o ID real foi trocado por `GTM-XXX
 
 ## Como foi feito
 
-Desenvolvi com apoio de IA e adaptei às necessidades do negócio. Estou estudando o código para evoluí-lo por conta própria.
+Desenvolvi com apoio de IA e adaptei às necessidades do negócio. Estou começando a estudar o código para depois evoluí-lo por conta própria.
 
 ## Contexto
 
@@ -30,7 +30,9 @@ Este site é a versão que ficou no ar depois de eu testar uma versão com orça
 - [ ] Guardar a lista de produtos em um arquivo de dados.
 - [ ] Revisar acessibilidade (textos alternativos e contraste).
 
-## O que já aprendi estudando este projeto
+## Plano de estudo deste projeto
+
+Metas de aprendizado. Vou marcar cada item quando eu conseguir explicá-lo sem ajuda da IA.
 
 - [ ] Como o `renderProducts` cria os cartões a partir de uma lista
 - [ ] Como ler parâmetros da URL com `URLSearchParams`
